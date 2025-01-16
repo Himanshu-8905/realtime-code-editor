@@ -72,7 +72,7 @@ const Home = () => {
                         If you don't have an invite, create &nbsp;
                         <a
                             onClick={createNewRoom}
-                            href=""
+                            href=''
                             className="text-green-400 underline hover:text-green-500 cursor-pointer"
                         >
                             a new room
