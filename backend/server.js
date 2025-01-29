@@ -1,12 +1,14 @@
-const express = require('express');
+import express from 'express';
 const app = express();
-const http = require('http');
-const path = require('path');
-const { Server } = require('socket.io');
-const ACTIONS = require('./Actions');
+import http from 'http';
+import path from 'path';
+import { Server } from 'socket.io';
+import ACTIONS from './Actions.js';
+
 
 const server = http.createServer(app);
 const io = new Server(server);
+const __dirname = path.resolve();
 
 // app.use(express.static('build'));
 // app.use((req, res, next) => {
